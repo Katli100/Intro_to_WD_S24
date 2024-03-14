@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <!-- this is the character set attribute specifies the character encoding for the HTML doc. UTF-8 character set covers almost all of the characters and symbols in the world -->
+        <meta charset="utf-8"/>
+        <!-- Viewport sets intital scale. make sures it fits in different screens. Overwrite prowser default styling. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- title tag. name on tab of page -->
+        <title> HTML Elements 101</title>
+    </header>
+    <body>
+     <!-- shows up on browser  -->
+     <!-- Header. From h1 to h6 -->
+     <h1 id="top">Heading 1 is the most important text on the page. there should be only 1 per page!</h1>
+     <!-- paragraph. <em> is to emphesize. similar to italisizing but weighted importance. <strong> will bold and do same thing.
+        <br/> breaks text and <hr/> adds a line -->
+    <hr/>
+     <p>to <strong>be</strong> or not to be <em>that</em> is the question.<br/> yayay</p>
+    <h2> Buttermilk pancakes</h2>
+    <p>this is a buttermilk pancakes</p>
+    <h3>Ingredients</h3>
+    <!-- bullet notes. not ordered -->
+    <ul>
+        <!-- use <li> for list. can use for <ul> or <ol> (order list) -->
+        <li>1 cup flour</li>   
+        <li>1 cup of milk</li>
+        <li>spices 
+            <ul>
+                <li>salt</li>
+                <li>oregano</li>
+                <li>pap</li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Instructions</h3>
+        <ol>
+            <li>do the thing</li>
+            <li>do some more thing</li>
+            <li>spices 
+                <ol>
+                    <li>salt</li>
+                    <li>oregano</li>
+                    <li>pap</li>
+                </ol>
+            </li>
+        </ol>
+        <!-- link. inside <a>, use target="_blank" to open link in differnt tab -->
+        <a href="https://sugarspunrun.com/buttermilk-pancakes/" target="_blank">Link to a real pancake recipe</a>
+        <br/>
+        <a href="#top">back to top of page</a>
+        <br/>
+        <img src="https://themodernnonna.com/wp-content/uploads/2023/01/whole-orange-blender-cake-1-300x300.jpeg"
+            width="500px"
+            height="500px"
+            alt="this is a picture of the cake very yummy. good for assesibility and incase picture does not display."
+            title="orange poundcake. this is used for hovering over img and showing this text."
+
+        />
+        <!-- for images that are downloaded, you need to make an image folder that the html will have access to.
+        so 
+        <img src="(foldername)/(img name)" -->
+        <!-- for linking to another page -->
+        <a href="about/index.html">back to homepage</a>
+    </body>
+</html>

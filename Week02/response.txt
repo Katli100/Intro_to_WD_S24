@@ -1,0 +1,7 @@
+Making sure you have a good workflow is very important when 
+creating wireframes as it makes creating wireframes effecient, 
+and ensures there are interactions you are not forgetting. I
+remember when I created my first wireframe, I realized that I 
+did not account for space for a mobile user that has a nudge on 
+the top of screen. Collaboration is very important for getting 
+feedback and changing things early before production.

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <header>
+
+        <meta charset="utf-8"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title> HTML Forms and Input</title>
+    </header>
+    <body>
+        
+     <p> Here is a form containing basic input types. For more info see
+        <a href="https://www.w3schools.com/html/html_basic.asp" target="_blank">w3schools</a>
+     </p>
+     <!-- form action usually contains a file to process the form data, it could be a local file 
+        (as long as in same file as html) or third party API -->
+     <form action="#" method="post" name="sampleForm" target="_self">
+        <fieldset>
+          <legend> Simple text input</legend>
+          <p>box and title are created by using fieldset and legend tags</p>
+          <label for="FirstName">FIrst Name</label>
+          <input name="FirstName" type="text">
+          <p> text input has max char length & placeholder text</p>
+          <label for="LastName">Last Name</label>
+          <input name="LastName" type="text" placeholder="Last Name" maxlength="15">
+          <label for="age" type="number" min="0" max="100"> </label>
+        </fieldset>
+        <fieldset>
+            <legend>Textarea Tag</legend>
+            <p>text area good for longer responces. can adjust text box</p>
+            <label for="WhyIDM">Why IDM?</label>
+            <textarea name="WhyIDM" cols="50" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Check boxes</legend>
+            <p> checkboxes allows user to select more than one option.checkboxes in same groupd have same name but different values</p>
+            <label for="pets">What pets do you have?</label>
+            <br/>
+            <input type="checkbox" name="pet" value="Dog"> Dog
+            <input type="checkbox" name="pet" value="Cat"> Cat
+            <input type="checkbox" name="pet" value="Fish"> Fish
+        </fieldset>
+        <fieldset>
+            <legend>Radio Buttons</legend>
+            <p> Radio button only allows one option per group. radio buttons in game group have same name, but different value</p>
+            <label for="pets">What your most fav pets do you have?</label>
+            <br/>
+            <input type="radio" name="pet" value="Dog"> Dog
+            <input type="radio" name="pet" value="Cat"> Cat
+            <input type="radio" name="pet" value="Fish"> Fish
+        </fieldset>
+        <fieldset>
+            <legend>Select Options</legend>
+            <p> using select and option tags, you can add items to a dropdown nemu</p>
+            <label for="State">Pick a State</label>
+            <br/>
+            <select name="State">
+                <option value="NH"> New Hampshire</option>
+                <option value="NY"> New York</option>
+                <option value="NM"> New Mexico</option>
+                <option value="NJ"> New Jersey</option>
+            </select>
+        </fieldset>
+        <p> add button to submit form</p>
+        <input name="Submit" value="Submit" type="button">
+        <p> we can chnage button name with value or use this button option</p>
+        <button role="button">Contact us!</button>
+     </form>
+    </body>
+</html>

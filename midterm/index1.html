@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>HTML Boilerplate</title>
+        <style>
+            @media screen and (max-width: 768px)  {
+                .back_img{
+                    display: flex;
+                    position: absolute;
+
+                }
+                .pink_blob{
+                    left: 0;
+                    top: 0;
+                    bottom: 0; /* Adjusted the bottom value */
+                    z-index: 1;
+                    height: 100vh;
+                    
+                }
+                .purple_blob {
+                    position: fixed;
+                    right: 0; /* Adjusted the right value */
+                    top:228px;
+                    z-index: 1;
+    
+                }
+
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="background">
+            <div class="nav">
+                <ul>
+                    <li>Home</li>
+                    <li>Projects</li>
+                    <li>About</li>
+                    <li>Contact</li>
+        
+                </ul>
+            </div>
+            <div class="back_img">
+                <img class="pink_blob" src="./images/pink.png">
+                <img class="yellow_blob" src="./images/yellow.png">
+                <img class="purple_blob" src="./images/purple.png">
+                <img class="picture" src="./images/picture.png">
+
+            </div>
+            <div class="logo_star">
+                <img class="logo" src="./images/logo.png">
+                <img class="stars" src="./images/stars.png">
+            </div>
+            <div class="intro_header">
+                <p>Hi, </p><p class="inter_light">I'm Katherine.</p>
+                <br>
+                <br>
+                <p class="inter_thin"><i>Your Creative Katalyst</i></p>
+            </div>
+        </div>
+        
+    </body>
+</html>

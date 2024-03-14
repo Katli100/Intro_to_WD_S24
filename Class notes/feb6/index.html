@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <header>
+
+        <meta charset="utf-8"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Intro to CSS and Spans</title>
+        <style type="text/CSS">
+            /* the star means this applies to all tags */
+            * {
+                margin: 0;
+            }
+            /* tag selector applies to every instance of that tag on that page. will override universal styling */
+            p {
+                /* 1 rem =16px */
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                margin-left: 0.5rem;
+                color: #FF5500;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /* using . means class  */
+            .sillyText {
+                font-family: fantasy;
+                font-weight: 800;
+                text-decoration: line-through;
+            }
+            /* using # is id. can only apply once */
+
+            #reallyImportant {
+                font-weight: 600;
+                font-size: x-large;
+                font-style: oblique;
+                line-height: 1.5;
+                text-transform: lowercase;
+
+            }
+
+            .indented {
+                text-indent: 20%;
+            }
+
+            .alignRight {
+                text-align: right;
+            }
+
+            .alightJustifed {
+                text-align: justify;
+            }
+            a {
+                color:inherit;
+                text-decoration: none;
+            }
+        </style>
+    </header>
+    <body>
+        <h1 style="margin: 10px 20px; color:blueviolet;">Heading 2 display block</h1>  
+
+        <p>yaya<span class="sillyText">yayayyeyyyayy</span>yayayayyayyayayayayayayayyayayayaayayayayayayayayayayay
+        </p>
+
+        <p id="reallyImportant" class="alightJustifed">yyayayayayayayayyayayayaayyayayayaya
+        </p>
+
+        <p class="indented">yayayayayauauauauauauayaaay<a href="#">something here</a>
+        </p>
+     
+    </body>
+</html>

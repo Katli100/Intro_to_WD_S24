@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <header>
+
+        <meta charset="utf-8"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title> Simple nav bar</title>
+         <style type="text/CSS">
+            @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            header {
+                background-color: darkgreen;
+            }
+
+            nav {
+                background-color: bisque;
+            }
+
+            ul {
+                /* removing bullet */
+                list-style-type: none;
+                overflow: hidden;
+                background-color: cornflowerblue;
+                /* make parent elements font size 0 when using inline block to get rid of space between letters
+                (bc inline is usually for text) */
+                font-size: 0;
+            }
+
+            li {
+                /* li display BLOCK by default. no share of horizontal shape with other elements */
+                display: inline-block;
+                font-size: 1 rem;
+            }
+            /* decendant selector. looks for tag patterns. in this case, it's looking for instances of <li><a> */
+
+            li a {
+                display: block;
+                text-align: center;
+                /* make big clickable area */
+                width: 100px;
+                padding: 10px;
+                /* remove the default a tag styling */
+                text-decoration: none;
+                color: chartreuse;
+            }
+
+            li a.active {
+                background-color: dodgerblue;
+            }
+            /* so when li a is hovered over, this happens */
+            li a:hover {
+                background-color: rgba(0, 0, 0, 1);
+                color: white
+            }
+         </style>
+    </header>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a class="active" href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                </ul>
+
+            </nav> 
+        </header>
+        
+    
+    </body>
+</html>

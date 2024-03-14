@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Intro to Arrays</title>
+        <script type="text/javascript">
+            //declare a variable called months without assigning it a value or type
+            var months
+            console.log(months)
+            //we can assign an empty array as the value of months
+            months=[]
+            console.log(months)
+            console.log(typeof months)
+
+            months = ['January','Feburary', 'March', 'April', 'May', 'June']
+            console.log(months.length)
+
+            // remove the last month/item in month in our array
+            //assign it to another variable
+            var lastMonth = months.pop() //.pop takes the last item off
+            console.log(months.length)
+            console.log(lastMonth)
+
+            months.pop()
+
+            //what if we want to log the secong month in our array
+            console.log(months[1])
+
+            //we messed up our array, we want to add may back in
+            months.push('May')
+            months.push(lastMonth)
+
+            console.log(months)
+
+            // use a loop to list out all values in our array
+            for(var i = 0; i < months.length; i++){
+                console.log(i+":"+months[i])
+            }
+
+            //loop throught the months array backwards and delete the last item using pop
+
+            for(var i = months.length ; i >0; i--){
+                var delMon = months.pop()
+
+            }
+
+            // picking a random number bween 0 and the length of our arry and then logging the item in that slot
+
+            var rn =Math.floor(Math.random() * months.length)
+            console.log(months[ri])
+        </script>
+    </head>
+    <body>
+        
+     
+    </body>
+</html>

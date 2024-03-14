@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>JS Math Methods</title>
+        <script type="text/javascript">
+            // integers :whole number
+            var x = 15;
+            var y =35;
+            var z;
+            z = 10; //if it's 10.5, it would be a float
+
+            //addition +
+            console.log(x+y)
+            //subtraction -
+            console.log(x-y)
+            //multiply *
+            console.log(x*y)
+            //divide /
+            console.log(x/y)
+            //modular %. returns the remainer in division
+            console.log(x%y)
+
+            // just like in algebra, order of operations matter
+            console.log((x+y)*(y-1))
+
+            //increments using x++
+            //decrement using x--
+            //we could also increment by whatever number if we use x+=(num)
+
+            //floating point numbers and some basic Math f'ns
+
+            var k =2.25
+            //math.floor will round down to the nearest whole num
+            var kDown = Math.floor(k)
+            console.log(kDown)
+            //math.ceil will round UP to the nearest int
+            var kUp = Math.ceil(k)
+            console.log(kUp)
+            //Math.round will round up or down based on the decimal
+            var num1 = 2.2
+            var num2 = 2.7
+            console.log(Math.round(num1))
+            console.log(Math.round(num2))
+
+            // Math.randon() :returns a float point number between 0 and 1
+            console.log(Math.random())
+
+            //we can use Math.random*() and math Round() to get the whole number or 1 for true flase situation
+
+            var yn = Math.round(Math.random()) // will alway return either 0 or 1
+            // === checks boolean and if the thing is a number
+            if (yn ===0) {
+                console.log('false')
+                
+            }else {
+                console.log('true')
+            }
+
+            //random num between 0 and n
+            //we are going to need a f'n that takes a param that we can change each time we call this f'n
+
+            function randNum(n){
+                //when we declare a variable inside a fn that variable is not acessable outside of this f'n
+                var rn = Math.round(n*Math.random())
+                console.log(rn)
+                
+            }
+            //this is useful wheny ou want to grab an random number fron a array
+            randNum(15)
+            var test // this is gonal but ill be assign it a vailw within range fn
+            function randNumRange(min, max){
+                // var rn = Math.round(Math.randon() *(max-min)+min)
+                // test = rn
+                return rn
+
+            }
+            var rand1 =randNumRange(20,30);
+            var rand2 = randNumRange(55,77)
+            // console.log(test)
+            console.log('On the fly, no var:'+ randNumRange(33,44))
+            console.log(rand1,rand2)
+
+
+
+
+        </script>
+    </head>
+    <body>
+        
+     
+    </body>
+</html>
