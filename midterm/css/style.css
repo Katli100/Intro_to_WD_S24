@@ -32,14 +32,16 @@ html, body {
     display: flex;
     position: relative;
     width: 100%;
-    height: 100vh; 
+    min-height: 100vh; 
 
 }
 
 .background img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
-    width: auto;
-    height: auto;
+
 
 }
 
@@ -49,6 +51,8 @@ html, body {
     bottom: 0; 
     z-index: 1;
     height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 .yellow_blob {
@@ -56,23 +60,28 @@ html, body {
     right: 0;
     z-index: 2;
     height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 .purple_blob {
-    right: 0; 
-    top:228px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: auto; 
     z-index: 1;
-    
+    width: 100%;
+    height: 100%;
 }
 
 .picture {
-
-    right: 200px;
-    top:160px;
+    display: block;
+    bottom: 0;
+    right: 220px;
     z-index: 3;
- 
-
 }
+
+
 
 .logo {
 
@@ -84,6 +93,8 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
+    width: auto;
+    height: auto;
 }
 
 .stars {
@@ -92,6 +103,8 @@ html, body {
     right: 200px;
     top: 100px;
     z-index: 3;
+    width: auto;
+    height: auto;
 }
 
 .nav{
@@ -145,9 +158,8 @@ html, body {
     background-color: #FEFFF6;
 }
 .big_proj_container{
-    width: 100%;
     padding: 12px 24px;
-    margin: 0; 
+    margin-top: 10vh; 
     
 }
 .project_container_body{
@@ -237,12 +249,17 @@ div {
 }
 @media screen and (min-width: 1280px) and (min-height: 382px) {
     .picture {
-        right: 280px; 
-        transform: scale(1.17);
+        right: 180px; 
+        bottom: 0;
+        transform: scale(1);
+        padding: 0;
+        align-items: baseline;
     }
 
     .pink_blob {
-        transform: scale(1.2); 
+        transform: scale(1.2);
+        align-items: baseline;
+        bottom: 0; 
     }
 
     .yellow_blob {
@@ -250,7 +267,9 @@ div {
     }
 
     .purple_blob {
-        transform: scale(1.2); 
+        transform: scale(1.2);
+        bottom: 0;
+        align-items: baseline; 
     }
 }
 @media screen and (max-width:768px){
@@ -261,20 +280,24 @@ div {
     .intro_header {
         top: 100px; 
     }
-     .big_proj_container{
-        transform: scale(.95);
-     }
     .project_page {
-        position: relative;
+        display: flex;
+        position:static;
         flex-direction: column; 
         align-items: center; 
         text-align: center; 
+        width: 100%;
+        max-width: 100%;
+        gap: 30px;
+        padding-top: 16px;
+        padding-bottom: 32px;
+        margin-bottom: 16px;
     }
 
     .project_img {
         position: relative;
-        left: 50%; 
-        transform: translateX(-50%); 
+        align-self: center; 
+        left: 0;
         margin-top: 20px; 
     }
     .project_container_body {
@@ -294,6 +317,12 @@ div {
     }
     .background{
         margin: 0;
+        
+    }
+    .prog_info{
+        position: relative;
+        left: 0px;
+        align-self: flex-start;
     }
     body{
         height: 100vh;
@@ -303,45 +332,46 @@ div {
 
     }
     .back_img {
-        display: flex; 
-        justify-content: space-around; 
-        align-items: center;
-        flex-wrap: nowrap; 
+        flex-direction: column;
+        align-items: flex-start;
     }
     .back_img img {
-        width: 200px;
+        max-width: 100%;
+        display: flex;
+        height: auto;
+        margin-top: 20px;
     }
     .pink_blob {
         position: fixed;
-        top: 330px;
-        height: 100%;
+        top: 0px;
+
         bottom: 0;
-        transform: scale(6); 
+        align-items: baseline;
+        transform: scale(2); 
     }
     .purple_blob{
-        
         position: fixed; 
         bottom: auto;
         right: 0; 
-        top: 330px; 
+        top: 0px; 
         z-index: 1;
-        transform: scale(6);  
+        align-items: baseline;
+        transform: scale(2);  
     }
     .yellow_blob{
         position: fixed; 
         bottom: auto; 
         right: 0;
-        top: 330px;
-        transform: scale(6); 
+        top: auto;
+        transform: scale(2); 
 
 
     }
     .picture{
-        transform: scale(3.5);
+        transform: scale(1);
         position: fixed;
-        bottom: auto;
-        top: 585px;
-        right: 110px;
+        bottom: 65px;
+        left: 70px;
     }
     .nav{
         z-index: 5;
@@ -400,7 +430,11 @@ div {
     }
 }
 
-
+/* if you made it here, i know it's a mess.
+I went back to look at my media query for a phone again by sizing the 
+window down instead of using the inspect function and it worked
+just the way i wanted to. safe to say i shot myself in the foot during
+the presentation last week. hope you have a great day! */
 
 
     
