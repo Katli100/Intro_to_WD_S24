@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>UI simple</title>
+        <style>
+            h1{
+                text-transform: uppercase;
+
+            }
+            /* classes to change the color with js */
+            .red{
+                color: red;
+            }
+            .green{
+                color: green;
+            }
+            .blue{
+                color:blue;
+            }
+        </style>
+        <script>
+            //a fn that changes the color of the h1 based on what num the user picks
+
+            //first thing we need is an event listener to make sure the dom content is loaded
+
+            document.addEventListener('DOMContentLoaded', function(){
+                let myBtn = document.getElementById('changeBtn')
+                console.log(myBtn.classList)
+
+                //nowe that the DOM is loaded we can add our event listeners
+                myBtn.addEventListener('click', function(){
+                    //grab the user input and store it
+                    let userN = document.getElementById('num')
+                    console.log(typeof userN)
+                    
+                })
+
+            })
+
+
+        </script>
+    </head>
+    <body>
+        
+     <h1 id="changeMe">Get User input</h1>
+     <form>
+        <fieldset>
+            <legend>Pick a number between 0-3</legend>
+            <input type="number" name="num" id="num" min="0" max="3" step="1">
+            <button type="button" id="changeBtn" class="btnClass">Click to change color class of the H1</button>
+
+        </fieldset>
+     </form>
+    </body>
+</html>

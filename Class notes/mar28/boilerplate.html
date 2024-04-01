@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Tip calculator</title>
+        <style type="text/css">
+
+        </style>
+        <script type="text/javascript">
+
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <label for="bill">Enter the value of the bill here:</label>
+                <input type="number" name="bill" id="bill" min="0" step=".01" required>
+                <br>
+                <!-- radio button groups. notice that all of our radio buttons have the same name but different values -->
+                <label>
+                    <input type="radio" name="tip" value=".05">5%
+                </label>
+                <label>
+                    <input type="radio" name="tip" value=".1">10%
+                </label>
+                <label>
+                    <input type="radio" name="tip" value=".15">15%
+                </label>
+                <label>
+                    <input type="radio" name="tip" value=".2">20%
+                </label>
+
+            </form>
+        </div>
+    </body>
+</html>
