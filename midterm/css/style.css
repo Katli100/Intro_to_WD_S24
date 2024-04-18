@@ -381,6 +381,7 @@ div {
         top: 120px;
         margin: 0;
         align-items: center;
+    }
     
         ul {
             display: block;
@@ -428,7 +429,7 @@ div {
         width: 200px;
 
     }
-}
+
 
 /* if you made it here, i know it's a mess.
 I went back to look at my media query for a phone again by sizing the 
