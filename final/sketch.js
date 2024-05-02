@@ -68,7 +68,7 @@ function startRecording() {
   //    and show hidden buttons
 	stopButton.mousePressed(stopRecording);
   stopButton.show();
-	videoRecorder.start()
+	videoRecorder.start();
 }
 
 function stopRecording() {
