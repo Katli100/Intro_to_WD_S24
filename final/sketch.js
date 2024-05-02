@@ -20,7 +20,7 @@ let deleteCount;
 let videoPlayback
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(800, 800);
   
   //  Create a webcam capture with video and audio
   //  When the stream is ready, setup the buttons
@@ -75,10 +75,21 @@ function stopRecording() {
 	videoRecorder.stop()
 	videoPlayback = createVideo(videoRecorder.url);
 	videoPlayback.hide();
-  downloadButton.mousePressed(() => videoRecorder.save("webcam"));
+  downloadButton.mousePressed(() => {videoRecorder.save("webcam"); window.location.href='end.html';});
   downloadButton.show();
   deleteButton.show();
-  deleteButton.mousePressed(deleteCount +=1)
+  deleteButton.mousePressed(deleteStuff)
   console.log(deleteCount)
+  recordButton.hide();
+  stopButton.hide();
 
 }
+
+function deleteStuff(){
+
+  deleteCount+=1;
+  deleteButton.hide();
+  downloadButton.hide();
+  setupButtons();
+}
+
